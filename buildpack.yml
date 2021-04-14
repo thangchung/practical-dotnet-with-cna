@@ -1,0 +1,3 @@
+---
+dotnet-build:
+  project-path: "service1/src/WebApi"
