@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+
+  webapi1:
+    image: vietnamdevsgroup/webapi
+    ports:
+      - 8080:8080
+    networks:
+      - mynetwork
+    restart: unless-stopped
+
+  webapi2:
+    image: vietnamdevsgroup/webapi2
+    ports:
+      - 8081:8080
+    networks:
+      - mynetwork
+    restart: unless-stopped
+
+networks:
+  mynetwork:
+    name: mynetwork-network
