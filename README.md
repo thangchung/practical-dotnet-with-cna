@@ -15,13 +15,15 @@ PaketoBuildpacks: https://github.com/paketo-buildpacks/samples/tree/main/dotnet-
 #### Service 1
 
 ```bash
-$ pack build vietnamdevsgroup/webapi --env BP_DOTNET_PROJECT_PATH=./service1/src/WebApi --buildpack gcr.io/paketo-buildpacks/dotnet-core
+$ pack build vietnamdevsgroup/webapi --env BP_DOTNET_PROJECT_PATH=./service1/src/WebApi 
+--buildpack gcr.io/paketo-buildpacks/dotnet-core
 ```
 
 #### Service 2
 
 ```bash
-$ pack build vietnamdevsgroup/webapi2 --env BP_DOTNET_PROJECT_PATH=./service2/src/WebApi2 --buildpack gcr.io/paketo-buildpacks/dotnet-core
+$ pack build vietnamdevsgroup/webapi2 --env BP_DOTNET_PROJECT_PATH=./service2/src/WebApi2 
+--buildpack gcr.io/paketo-buildpacks/dotnet-core
 ```
 
 #### Run all services
